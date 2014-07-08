@@ -1,34 +1,55 @@
-.skelenavh {
+.skele_nav {
     width: 100%;
-    display: block;
-    background-color: grey;
-    color: white;
+    background-color: #a9a9a9;
+    padding: 0;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-.skelenavh > ul > li {
-    display:inline-block;
-    min-width: 100px;
-    margin: 0;
-    padding: 7px 10px;
-    text-align: center;
-}
-.skelenavh ul li:hover {
-    background-color: black;
-    position: relative;
-}
+    .skele_nav a, .skele_nav li {
+        display: block;
+        float: left;
+        padding: 10px;
+        text-decoration: none;
+        margin: 0;
+        color: #ffffff;
+        background-color: #a9a9a9;
+    }
+    .skele_nav a:hover {
+        background-color: #000000;
+    }
 
-.skelenavh ul li ul li {
-    display: none;
-}
+    .skele_nav ul, .skele_nav li {
+        margin: 0;
+        padding: 0;
+    }
 
-.skelenavh ul li:hover ul {
-    display: block;
-    background-color: grey;
-    position: absolute;
-    top: 100%;
-    margin: 0;
-    padding: 10px;
-}
+    .skele_nav li:hover {
+        position: relative;
+    }
 
-.skelenavh ul li:hover ul li {
-    display: block;
-}
+    .skele_nav > ul li:hover > ul {
+        display: block;
+        border-radius: 4px;
+    }
+
+    .skele_nav > ul > li:hover > ul {
+        top: 100%;
+    }
+
+    .skele_nav > ul > li:hover > ul > li ul {
+        left: 100%;
+        top: 0;
+    }
+
+    .skele_nav > ul > li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .skele_nav > ul > li ul a {
+        float: none;
+        width: 100%;
+    }
