@@ -1,0 +1,34 @@
+.skelenavh {
+    width: 100%;
+    display: block;
+    background-color: grey;
+    color: white;
+}
+.skelenavh > ul > li {
+    display:inline-block;
+    min-width: 100px;
+    margin: 0;
+    padding: 7px 10px;
+    text-align: center;
+}
+.skelenavh ul li:hover {
+    background-color: black;
+    position: relative;
+}
+
+.skelenavh ul li ul li {
+    display: none;
+}
+
+.skelenavh ul li:hover ul {
+    display: block;
+    background-color: grey;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.skelenavh ul li:hover ul li {
+    display: block;
+}
